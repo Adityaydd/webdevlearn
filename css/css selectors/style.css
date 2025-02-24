@@ -1,0 +1,21 @@
+.red-text{ /* class*/
+color:red;}
+
+.yellow-text{
+color:yellow;}
+
+.green-text{
+color:green;}
+
+#main{
+color: blue;}/*this is a id*/
+
+/* class can be applis to many elemstns but id is appled to one*/
+
+p[colo]{
+color: greenyellow;
+}
+p[draggable="false"]{
+color: orange;
+}
+
