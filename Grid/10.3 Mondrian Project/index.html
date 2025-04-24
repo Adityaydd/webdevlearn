@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      .container {
+        width: 748px;
+        height: 748px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -374px;
+        margin-left: -374px;
+        background-color: black;
+        gap: 9px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+
+      .r1 {
+        background-color: red;
+        width: 320px;
+        height: 414px;
+      }
+
+      .r2 {
+        width: 419px;
+        background-color: #f0f1ec;
+        grid-column: 2 / span 3;
+      }
+
+      .r3 {
+        background-color: #f0f1ec;
+        grid-row: 2 / span 1;
+      }
+
+      .r4 {
+        background-color: #f0f1ec;
+        width: 360px;
+        height: 295px;
+      }
+
+      .r5 {
+        background-color: #004592;
+        width: 50px;
+        height: 130px;
+        border-bottom-width: 19px;
+        border-bottom-style: solid;
+        border-bottom-color: black;
+      }
+
+      .r51 {
+        position: relative;
+        top: 149px;
+        width: 50px;
+        height: 176px;
+        background-color: #f0f1ec;
+      }
+
+      .r7 {
+        height: 21px;
+        background-color: #f0f1ec;
+      }
+
+      .r8 > * {
+        float: left;
+        height: 21px;
+      }
+
+      .r81 {
+        width: 198px;
+        background-color: #f9d01e;
+      }
+
+      .r82 {
+        width: 152px;
+        background-color: #232629;
+      }
+
+      .r83 {
+        width: 10px;
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item r1"></div>
+      <div class="item r2"></div>
+      <div class="item r3"></div>
+      <div class="item r4"></div>
+      <div class="item r5">
+        <div class="r51"></div>
+      </div>
+      <div class="item r6"></div>
+      <div class="item r7"></div>
+      <div class="item r8">
+        <div class="r81"></div>
+        <div class="r83"></div>
+        <div class="r82"></div>
+      </div>
+      <div class="item r9"></div>
+      <div class="item r10"></div>
+      <div class="item r11"></div>
+      <div class="item r12"></div>
+      <div class="item r13"></div>
+      <div class="item r14"></div>
+      <div class="item r15"></div>
+      <div class="item r16"></div>
+    </div>
+    <!-- Write your HTML here -->
+  </body>
+</html>
